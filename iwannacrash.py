@@ -40,6 +40,8 @@ def main():
     parser.add_argument('--workers', type=int, default=1, help='Number of CPU workers')
     args = parser.parse_args()
 
+    if args.workers < 0:
+        args.workers = multiprocessing.cpu_count()
     procs = []
     # Start CPU burn processes
     for _ in range(args.workers):
