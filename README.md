@@ -13,16 +13,16 @@ pip install psutil
 
 CPU at 50% utilization
 ```
-python throttle_toy.py --cpu 0.5 
+python iwannacrash.py --cpu 0.5 
 ```
 
 CPU at 80% utilization and use 4 workers 
 ```
-python throttle_toy.py --cpu 0.8 --workers 4
+python iwannacrash.py --cpu 0.8 --workers 4
 ```
 
 CPU at 20% utilization use all cores and RAM at 60% utilization
 ```
-python throttle_toy.py --cpu 0.2 --ram 0.6 --workers -1
+python iwannacrash.py --cpu 0.2 --ram 0.6 --workers -1
 ```
 
